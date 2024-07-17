@@ -1,0 +1,11 @@
+*****LIsterner**
+
+Name is listerner
+port is 1521
+Dynamic: 
+Single listerner will take connection from first pluggable database 
+in the listerner.ora file no entry is present
+LRE
+
+Two listener cannot be run with same port
+dynamic registers 

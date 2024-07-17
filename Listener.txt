@@ -1,0 +1,35 @@
+Listener
+
+One user when he wants to connect to oracle database using SQL dev, oracle client 
+
+We will userid 
+password 
+ 
+which will go to oracle listener
+Oracle will send those details to oracle listerner , which in turn will send the details to pmon
+
+listener will be created automatically when database is installed
+Default name of the listerner ->Listener
+Location:  $ORACLE_HOME/network/admin/listener.ora
+default Port : 1521
+Present in listener.ora
+
+On client side we have tnsnames.ora 
+
+Database and listener are independent services
+
+How is listener registered?
+
+_> Static registration -> When two databases are static with different port numbers, two listerners cannot run with two different port, so static registered is required, we need to add sid and port numbers in listerner.ora(like 1522)
+
+-> Dynamic registration-> As soon as we have a database installed , the name , port are default (listener,ora) through LREG 
+
+Listener should always be up and running
+ 
+ lsnrctl status
+
+
+
+
+
+

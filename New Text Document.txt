@@ -1,0 +1,48 @@
+User->Create table-> data stores data in datafiles 
+
+
+Tablespace is collection of datafiles
+when the user is trying to insert the data, it will go to datafiles under tablespace in which user is assigned
+
+
+default tablespace 
+Temperory tablespace
+
+
+Users
+System-> Used by sysuser, meta table information is stored in the system tablespace 
+sysaux->AWR, AUdit table info is stored in sysaux tablespace
+
+undo -> To roll back any statement , undo tablespace is used
+temp-> sorting and joining operations are under temp tablespace
+Users are assigned to default tablespace and temp tablespace. 
+users are assigned to temp tablespace when join operations are happening
+
+
+created automatically during the time of installation
+
+when tablespace is not assigned it will go to user tablespace 
+
+datafile size in a tablespace depends on the block size(IF bblocksize 8KB 32GB)
+
+When the 32GB is full the error comes tablespace is full
+
+So two options
+
+add datafiles 
+resize the datafile-
+
+In both there should be enough space in the OS to add the datafile, but the maximum one datafile should be only 32GB
+
+
+we can add multiple datafiles
+
+
+
+
+
+
+
+
+
+
